@@ -1,3 +1,4 @@
+chumpy
 dataclasses
 json_tricks
 matplotlib
