@@ -130,11 +130,12 @@ class TopDown(BasePose):
             _, avg_acc, cnt = pose_pck_accuracy(
                 output[-1].detach().cpu().numpy(),
                 target.detach().cpu().numpy(),
-                target_weight.squeeze(-1) > 0)
+                target_weight.detach().cpu().numpy() > 0)
         else:
-            _, avg_acc, cnt = pose_pck_accuracy(output.detach().cpu().numpy(),
-                                                target.detach().cpu().numpy(),
-                                                target_weight.squeeze(-1) > 0)
+            _, avg_acc, cnt = pose_pck_accuracy(
+                output.detach().cpu().numpy(),
+                target.detach().cpu().numpy(),
+                target_weight.detach().cpu().numpy() > 0)
 
         losses['acc_pose'] = float(avg_acc)
 
