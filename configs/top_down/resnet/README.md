@@ -96,24 +96,3 @@ Following the common setting, the models are trained on COCO train dataset, and 
 | [pose_resnet_101](/configs/top_down/resnet/crowdpose/res101_crowdpose_256x192.py)  | 256x192 | 0.647 | 0.814 | 0.703 | 0.748 | 0.658 | 0.518 | [ckpt](https://download.openmmlab.com/mmpose/top_down/resnet/res101_crowdpose_256x192-ad003be3_20201017.pth) | [log](https://download.openmmlab.com/mmpose/top_down/resnet/res101_crowdpose_256x192_20201017.log.json) |
 | [pose_resnet_101](/configs/top_down/resnet/crowdpose/res101_crowdpose_320x256.py)  | 320x256 | 0.659 | 0.819 | 0.713 | 0.757 | 0.669 | 0.536 | [ckpt](https://download.openmmlab.com/mmpose/top_down/resnet/res101_crowdpose_320x256-7723ede3_20201017.pth) | [log](https://download.openmmlab.com/mmpose/top_down/resnet/res101_crowdpose_320x256_20201017.log.json) |
 | [pose_resnet_152](/configs/top_down/resnet/crowdpose/res152_crowdpose_256x192.py)  | 256x192 | 0.653 | 0.815 | 0.710 | 0.751 | 0.665 | 0.526 | [ckpt](https://download.openmmlab.com/mmpose/top_down/resnet/res152_crowdpose_256x192-a6507ad0_20201017.pth) | [log](https://download.openmmlab.com/mmpose/top_down/resnet/res152_crowdpose_256x192_20201017.log.json) |
-
-
-### 2d Hand Pose Estimation
-
-#### Results on OneHand10K val set.
-
-| Arch  | Input Size | PCK@0.2 |  AUC  |  EPE  | ckpt    | log     |
-| :--- | :--------: | :------: | :------: | :------: |:------: |:------: |
-| [pose_resnet_50](/configs/top_down/resnet/onehand10k/res50_onehand10k_256x256.py) | 256x256 | 0.985 | 0.536 | 27.3 | [ckpt](https://download.openmmlab.com/mmpose/top_down/resnet/res50_onehand10k_256x256-e67998f6_20200813.pth) | [log](https://download.openmmlab.com/mmpose/top_down/resnet/res50_onehand10k_256x256_20200813.log.json) |
-
-#### Results on FreiHand val set.
-
-| Arch  | Input Size | PCK@0.2 |  AUC  |  EPE  | ckpt    | log     |
-| :--- | :--------: | :------: | :------: | :------: |:------: |:------: |
-| [pose_resnet_50](/configs/top_down/resnet/freihand/res50_freihand_224x224.py) | 224x224 | 0.985 | 0.536 | 27.3 | [ckpt](https://download.openmmlab.com/mmpose/top_down/resnet/res50_freihand_224x224-ff0799bc_20200914.pth) | [log](https://download.openmmlab.com/mmpose/top_down/resnet/res50_freihand_224x224_20200914.log.json) |
-
-#### Results on CMU Panoptic (MPII+NZSL val set).
-
-| Arch  | Input Size | PCK@0.2 |  AUC  |  EPE  | ckpt    | log     |
-| :--- | :--------: | :------: | :------: | :------: |:------: |:------: |
-| [pose_resnet_50](/configs/top_down/resnet/panoptic/res50_panoptic_256x256.py) | 224x224 | 0.998 | 0.708 | 9.24 | [ckpt](https://download.openmmlab.com/mmpose/top_down/resnet/res50_panoptic_256x256-5f55ca1a_20200925.pth) | [log](https://download.openmmlab.com/mmpose/top_down/resnet/res50_panoptic_256x256_20200925.log.json) |

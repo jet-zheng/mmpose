@@ -126,8 +126,6 @@ class TopDown(BasePose):
         else:
             losses['mse_loss'] = self.loss(output, target, target_weight)
 
-        print(target_weight.detach().cpu().numpy().shape, flush=True)
-
         if isinstance(output, list):
             _, avg_acc, cnt = pose_pck_accuracy(
                 output[-1].detach().cpu().numpy(),
